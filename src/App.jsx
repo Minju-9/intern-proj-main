@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+// temporary redeploy test
+// redeploy test
 // 웹용 컴포넌트
-import '../dash/Dash.css';
+import './dash/Dash.css';
 import LoginPage from './login/LoginPage';
 import DashboardPage from './dash/DashboardPage';
 
