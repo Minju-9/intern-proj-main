@@ -1,26 +1,19 @@
-
-
 import React from 'react';
-import logo from '../../assets/sejong_logo.png'; 
-import logotext from '../../assets/maintext_logo.png'
 
 export default function LogoSection_Dash() {
   return (
     <div className="mobile-mini-header">
       <img
-        src={logo}
+        src="/sejong_logo.png"    // ✅ public 폴더 기준 절대 경로
         alt="로고"
         className="mobile-mini-logo"
       />
 
       <img
-        src={logotext}
+        src="/maintext_logo.png"  // ✅ public 폴더 기준 절대 경로
         alt="로고텍스트"
         className="mobile-mini-logotext"
       />
-
     </div>
-
-    
   );
 }

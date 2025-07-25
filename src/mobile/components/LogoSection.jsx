@@ -5,17 +5,17 @@ export default function LogoSection() {
   return (
     <div className="mobile-logo-section">
       <img
-        src="/src/assets/sejong_logo.png"
+        src="/sejong_logo.png"        // ✅ public 폴더 기준
         alt="Sejong Logo"
         className="mobile-logo-image-sejong"
       />
       <img
-        src="/src/assets/maintext_logo.png"
+        src="/maintext_logo.png"      // ✅ public 폴더 기준
         alt="Main Text"
         className="mobile-logo-image-maintext"
       />
       <img
-        src="/src/assets/subtext_logo.png"
+        src="/subtext_logo.png"       // ✅ public 폴더 기준
         alt="Sub Text"
         className="mobile-logo-image-subtext"
       />

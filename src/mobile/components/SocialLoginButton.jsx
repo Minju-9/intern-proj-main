@@ -11,7 +11,7 @@ export default function SocialLoginButton({ type }) {
   const style = buttonStyleMap[type];
 
   const handleLogin = () => {
-    const baseUrl = "http://localhost:8082/oauth2/authorization";
+    const baseUrl = "https://internproject-ohxn.onrender.com/oauth2/authorization"; // ✅ 배포 URL로 수정
     if (type === "facebook") {
       alert("현재 페이스북 로그인은 지원되지 않습니다.");
       return;
@@ -33,7 +33,7 @@ export default function SocialLoginButton({ type }) {
         borderRadius: '999px',
         fontWeight: 'bold',
       }}
-      onClick={handleLogin}  // ✅ 클릭 이벤트 추가
+      onClick={handleLogin}
     >
       {style.text}
     </button>
