@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // 웹용 컴포넌트
-import '../dash/dash.css';
+import '../dash/Dash.css';
 import LoginPage from './login/LoginPage';
 import DashboardPage from './dash/DashboardPage';
 
