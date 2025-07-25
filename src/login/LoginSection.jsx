@@ -24,34 +24,22 @@ export default function LoginSection() {
   };
 
   return (
-    <div className="login-section">
-      <h2>Login</h2>
+    <div className="mobile-login">
+      <LogoSection />
 
-      <LoginButton
-        className="btn-naver"
-        text="네이버 계정으로 로그인"
-        onClick={() => handleLogin("naver")}
-      />
-      <LoginButton
-        className="btn-kakao"
-        text="카카오 계정으로 로그인"
-        onClick={() => handleLogin("kakao")}
-      />
-      <LoginButton
-        className="btn-facebook"
-        text="페이스북 계정으로 로그인"
-        onClick={() => alert("페이스북 로그인은 준비 중입니다.")}
-      />
-      <LoginButton
-        className="btn-google"
-        text="구글 계정으로 로그인"
-        onClick={() => handleLogin("google")}
-      />
+      <div className="mobile-login-buttons">
+        <SocialLoginButton type="naver" />
+        <SocialLoginButton type="kakao" />
+        <SocialLoginButton type="facebook" />
+        <SocialLoginButton type="google" />
+      </div>
 
-      <p className="login-notice">
-        회원가입 및 로그인은 플랫폼의<br />
-        로그인 시 <u>이용약관</u> 및 <u>개인정보 처리방침</u> 동의로 간주합니다.
-      </p>
+      <footer className="mobile-login-footer">
+        <p>
+          회원가입 및 로그인 시<br />
+          서비스 및 개인정보 처리방침 동의로 간주합니다.
+        </p>
+      </footer>
     </div>
   );
 }
